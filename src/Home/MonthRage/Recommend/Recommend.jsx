@@ -114,12 +114,19 @@ class  Recommend extends Component {
          </Row>
          {/* 精选单歌 */}
          <Row>
-           <Col span={6}>
-              
+           <Col span={6} className={RecommendSc.box}>
+           <span className={RecommendSc.imgD}>ddd</span>
+              <img style={{width:'100%',height:'150px',padding:'10px',fontSize:'0'}}  src={require('../../../lib/images/Sp001.jpg')} alt=""/>
            </Col>
-           <Col span={6}></Col>
-           <Col span={6}></Col>
-           <Col span={6}></Col>
+           <Col span={6}>
+             <img style={{width:'100%',height:'150px',padding:'10px',fontSize:'0'}} src={require('../../../lib/images/Sp002.jpg')} alt=""/>
+           </Col>
+           <Col span={6}>
+           <img  style={{width:'100%',height:'150px',padding:'10px',fontSize:'0'}} src={require('../../../lib/images/Sp003.jpg')} alt=""/>
+           </Col>
+           <Col span={6}>
+           <img style={{width:'100%',height:'150px',padding:'10px',fontSize:'0'}} src={require('../../../lib/images/Sp004.jpg')} alt=""/>
+           </Col>
          </Row>
 
       </div>

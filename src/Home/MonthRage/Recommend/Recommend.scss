@@ -108,3 +108,24 @@
     border-radius: 10px;
     background: #EDEDED;
 }
+.imgD{
+    height: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
+    color:#fff;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    transition: all 0.5s ease;
+    
+   
+ }
+ .box:hover .imgD{
+    position: absolute;
+    height: 100px;
+    transition: all 0.5 ease;
+ }
+ .box{
+     overflow: hidden;
+     transition: all 0.5 ease;
+ }
