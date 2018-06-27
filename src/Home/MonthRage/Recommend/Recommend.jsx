@@ -112,7 +112,16 @@ class  Recommend extends Component {
                <Button type="dashed">心灵福音</Button>
             </Col>
          </Row>
-         
+         {/* 精选单歌 */}
+         <Row>
+           <Col span={6}>
+              
+           </Col>
+           <Col span={6}></Col>
+           <Col span={6}></Col>
+           <Col span={6}></Col>
+         </Row>
+
       </div>
     );
   }
