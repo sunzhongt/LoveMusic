@@ -1,0 +1,24 @@
+.ant-layout-footer .ant-col-4,
+.ant-layout-footer .ant-col-2,
+.ant-layout-footer .ant-col-9,
+.ant-layout-footer .ant-col-10,
+.ant-layout-footer .ant-col-7,
+.ant-layout-footer .ant-row{
+    height: 100%;
+}
+.ant-col-10 .ant-row .ant-col-3{
+    
+       height: 100%!important;
+       line-height: 68px;
+       text-align: center; 
+       padding-top: 5px; 
+       padding-left:10px ;
+       box-sizing: border-box;
+    
+}  
+.ant-layout-footer .ant-col-3{
+    padding: 3px;
+    text-align: right;
+    overflow: hidden;
+   
+}

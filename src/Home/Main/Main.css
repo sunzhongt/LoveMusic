@@ -1,0 +1,99 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: rgba(252, 77, 77);
+    margin: 16px;
+}
+.ant-layout{
+    height: 100%;
+}
+.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-inline,.ant-layout-sider{
+    background-color: #F7F7F7; 
+    color: rgb(25, 29, 26); 
+}
+
+ .ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background-color: rgba(146, 250, 250, 0.39)!important;
+    color:rgba(27, 42, 46, 0.699);
+}
+.ant-menu.ant-menu-sub.ant-menu-inline .ant-menu-item{
+    background-color: #F7F7F7;
+    color:#000;
+}
+.ant-menu.ant-menu-sub.ant-menu-inline{
+    background-color: #F7F7F7;
+    box-shadow:0px 0px 10px #F7F7F7;
+}
+.ant-menu-submenu-title{
+    color:#000;
+}
+.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-inline>.ant-menu-item{
+ color:#000;
+}
+.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-horizontal .ant-menu-item{
+    line-height: 28px;
+   margin-top: 3px;
+   margin-right: 7px;
+   border-radius: 5px;
+   float: right;
+  
+}
+.ant-menu.ant-menu-dark.ant-menu-root.ant-menu-horizontal .ant-menu-item:hover{
+    background-color: rgba(174, 237, 248, 0.5)!important;
+}
+
+.ant-menu-horizontal .ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background-color: #000!important;
+}
+
+.ant-menu-item.ant-menu.ant-menu-submenu-inline.ant-menu-submenu-active{
+    color:#666;
+}
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-item-submenu-active,
+.ant-menu-dark .ant-menu-item-submenu-open,
+.ant-menu-dark .ant-menu-item-submenu-selected,
+.ant-menu-dark  .ant-menu-submenu-title:hover{
+  color: #666666 !important;
+}
+.ant-menu-submenu.ant-menu-submenu-vertical{
+    color:#fff!important;
+}
+.ant-menu-dark.ant-menu-horizontal{
+    border:none ;
+}
+.ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-title .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-sub .ant-menu-submenu-title .ant-menu-submenu-arrow:before{
+    background-color: #000!important;
+} 
+.ant-layout-sider-trigger {
+    
+    bottom: 67.8px!important;
+    background-color: #A88BB9;
+}
+.ant-menu-item span a{
+    color:#000;
+}
+.ant-layout-footer{
+    padding: 0;
+    height: 68px;
+}
+title{
+    background-color: pink;
+}
+.ant-layout-sider-children{
+    overflow: auto!important;
+}
+.ant-layout-sider-children::-webkit-scrollbar {
+    width: 10px;    
+    height: 1px;
+}
+.ant-layout-sider-children::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 5px rgba(192, 142, 181, 0.2);
+    background: #f7d4e8;
+}
+.ant-layout-sider-children::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(192, 142, 181, 0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}

@@ -1,0 +1,33 @@
+.MonthRage{
+    width: 100%;
+    position: relative;
+    height: 100%;
+
+}
+.nav{
+    width: 100%;
+    position: absolute;
+}
+.ul{
+    list-style: none;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    // border-bottom: 1px rgb(216, 229, 245) solid;
+    a{
+        float: left;
+        width: 20%;
+        margin: 0 auto;
+        text-align: left;
+        padding-bottom: 10px;
+        text-decoration: none;
+       
+        transition: all 0.5s linear ;
+    
+        cursor: pointer; ;
+       
+    }
+     a:hover{
+        color:rgb(247, 185, 52);
+    }
+} 

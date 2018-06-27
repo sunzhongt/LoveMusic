@@ -1,0 +1,7 @@
+.ant-input-affix-wrapper .ant-input-prefix, .ant-input-affix-wrapper .ant-input-suffix{
+    /* top:75%!important; */
+}
+.ant-input{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}

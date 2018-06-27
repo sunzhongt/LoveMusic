@@ -1,0 +1,23 @@
+.ant-tabs-nav .ant-tabs-tab {
+    padding: 12px 58px;
+}
+.clearfix:after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+    }
+  
+    .clearfix{
+     zoom:1;  
+    }
+    .ant-tabs-tabs hr{
+        margin: 0;
+        border: 1px orange solid;
+    }
+    .actives{
+        color:orange;
+    }
+    
