@@ -31,4 +31,14 @@ li  .anticon:hover ::before{
         color:rgb(255, 110, 74);
     }
 
-    
+    .ant-row>.ant-col-24>h3::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        margin-right: 5px;
+        height: 21px;
+        line-height: 21 px;
+        width: 2.5px;
+        background-color: rgb(5, 161, 233) ; 
+    }  

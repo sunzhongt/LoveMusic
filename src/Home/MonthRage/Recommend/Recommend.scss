@@ -117,15 +117,181 @@
     z-index: 10;
     bottom: 0;
     transition: all 0.5s ease;
+    padding:0 10px;
     
-   
+    .IconS{
+        color:rgba(240, 235, 235, 0.74);
+        font-size:16px ;
+         float: right;
+         margin: 5px;    
+         cursor: pointer;
+         padding: 2px;
+         border: 1.5px rgba(240, 235, 235, 0.74) solid;
+         border-radius:4px ;
+    }
+    .IconS:hover{
+       text-shadow:0px 0px 4px rgba(255, 255, 255, 0.507);
+       color:rgba(136, 245, 245, 0.863);
+       box-shadow:0px 0px 6px  rgba(136, 245, 245, 0.863);
+
+    }
+    h4,h2,p{
+        padding: 0;
+        margin: 0;
+
+    }
+    h4{
+        color:rgb(24, 23, 23);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 15 px;
+        margin-top: 5px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-family: 'STXingkai';
+        overflow: hidden;
+    }   
+    h2{
+        color:rgb(231, 250, 161);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 5px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-family: 'LiSu';
+        margin: 4px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        color:rgb(252, 247, 247);
+        padding-left: 10px;
+    }
  }
  .box:hover .imgD{
     position: absolute;
-    height: 100px;
+    height: 120px;
     transition: all 0.5 ease;
  }
  .box{
      overflow: hidden;
      transition: all 0.5 ease;
  }
+.imgDTBox{
+  overflow: hidden;
+  position: relative; 
+  cursor: pointer;
+  .IconSTwo{
+      position: absolute;
+      transform: translateX(-50%) ;
+      top:30%;
+      left: 50%;
+      color:rgba(255, 255, 255, 0.801);
+      z-index: 10;
+      font-size: 40px;
+      cursor: pointer;
+      display: none;
+
+  }
+  .IconSTwo:hover{
+      color:lightblue;
+      text-shadow: 0px 0px 7px rgb(17, 200, 233);
+  }
+  h1{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) ;
+      top:30%;
+      font-weight: 700;
+      font-size: 28px;
+    //   color:rgba(185, 184, 184, 0.788);
+      font-family: 'FZShuTi';
+      padding: 0;
+      margin: 0;
+      display: block;
+  } 
+  p{
+      width: 100%;
+      text-align: center;
+      font-family: 'STLiti';
+      font-weight: 700;
+      font-style: 18px;
+
+  }
+  p:hover{
+      color:lightblue;
+  }
+ .imgDT{
+     width: 100%;
+     height: 150px;
+     padding: 10px;
+ }
+
+
+}
+.imgDTBox:hover h1{
+    display: none;
+}
+.imgDTBox:hover .IconSTwo{
+    display: inline-block;
+}
+.Mbox{
+    width: 100%;
+    height: 100px;
+    // background-color: ;
+    position: relative;
+    padding-right:200px ;
+    box-sizing: border-box;
+    .LeftMABox{
+        width: 100%;
+        height: 100%;
+        // background-color: lightblue;
+    }
+    .RightMABox{
+        position: absolute; 
+        right: 0;
+        top:0;
+        width: 200px;
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(252, 208, 253, 0.705);
+
+        p{
+            padding: 0 ;
+            margin: 0;
+            font-size:13px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            height: 30%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            padding: 3px;
+            border: 2px #000 solid;
+            background-color: #fff;
+        }
+        .imgx{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+           
+            top:50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+            img{
+                width: 100%;
+                border-radius: 10px ;
+                border: none;
+            }
+        }
+    }
+}
+
+// p.normal {font-weight:normal;}
+// p.thick {font-weight:bold;}
