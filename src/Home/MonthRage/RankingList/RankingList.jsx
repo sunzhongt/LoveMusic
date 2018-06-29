@@ -1,71 +1,91 @@
 import React, { Component } from 'react';
-import { Layout, Menu,  Icon ,Row,Col} from 'antd';
-import {variable} from '../../../Overall/Overall';
+import { Layout, Menu, Icon, Row, Col } from 'antd';
+import { variable } from '../../../Overall/Overall';
 import $ from 'jquery';
 import RankingListSc from './RankingList.scss';//header scss文件
-import  './RankingList.css'; //header css文件
-import RankingListContent from  './RankingListContent/RankingListContent' ;
+import './RankingList.css'; //header css文件
+import RankingListContent from './RankingListContent/RankingListContent';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
-class  RankingList extends Component {
-  constructor(){
+class RankingList extends Component {
+  constructor() {
     super();
-    this.state={
-      aa:"参数",
-      dd:{
-        a:1,
-        b:'22'
+    this.state = {
+      aa: "参数",
+      dd: {
+        a: 1,
+        b: '22'
       },
-      dataLish:{}
+      dataLish: {},
+      propsDataID:1
     }
   }
   render() {
+    let aaa = 1;
     return (
-      <div className="RankingList" style={{height:variable.tab1}}>
-         <Layout style={{ padding: '24px 0', background: '#fff',height:'100%' }}>
-        <Sider width={200} style={{ background: '#fff',maxWidth: 179,minWidth: 179,height:'100%', width: 179 }}>
-          <Menu
-            mode="inline"
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
-            style={{ height: '100%',  maxWidth: 160,minWidth: 160, width: 160  }}
-          >
-
-          
-          <SubMenu key="sub1" title={<span style={{paddingLeft:'20px'}}>热门榜单</span>} >
-              <Menu.Item key="1" style={{paddingLeft: '20px'}}>
-                {/* <span className={RankingListSc.icon}>
-                    <img src={require('../../../lib/images/icon/icon001.png')} alt=""/>
-                </span>
-                <h4>爱音乐排行榜</h4> */}
-                {this.state.dataLish.MaxlistCount}
-              </Menu.Item>
-            </SubMenu>
-          
-         
-          </Menu>
-        </Sider>
-        <Content style={{ padding: '0 1px ', height:'100%' }}>
-            <RankingListContent {...this.state.dd}/>
-        </Content>
-      </Layout>
+      <div className="RankingList" style={{ height: variable.tab1 }}>
+        <Layout style={{ padding: '24px 0', background: '#fff', height: '100%' }}>
+          <Sider width={200} style={{ background: '#fff', maxWidth: 200, minWidth: 200, height: '100%', width: 200 }}>{/*179 */}
+            <Menu
+              mode="inline"
+              defaultSelectedKeys={['1']}
+              defaultOpenKeys={['sub1']}
+              style={{ height: '100%', maxWidth: 190, minWidth: 190, width: 190 }}//160
+              onSelect={({ item, key, selectedKeys }) => this.SelectProps({ item, key, selectedKeys })}
+            >
+              {
+                this.state.dataLish.Maxlist.map((itme, i) => {
+                  return <SubMenu key={'sub' + aaa++} title={<span style={{ paddingLeft: '20px' }}>{itme}</span>} >
+                    {
+                      this.state.dataLish.MinlistData.map((element, index) => {
+                        if (element.name === itme) {
+                          return element.data.map((y, x) => {
+                            return <Menu.Item key={y.ID} ref="antItme" >
+                              <span className={RankingListSc.icon}>
+                                <img src={y.IconUrl} alt='' />
+                              </span>
+                              <h4>{y.titles}</h4>
+                            </Menu.Item>
+                          })
+                        } else {
+                          return false
+                        }
+                      })
+                    }
+                  </SubMenu>
+                })
+              }
+            </Menu>
+          </Sider>
+          <Content style={{ padding: '0 1px ', height: '100%' }}>
+            <RankingListContent ID={this.state.propsDataID} />
+          </Content>
+        </Layout>
       </div>
     );
   }
-  componentDidMount(){
-    this.GetRankingList()
-    $('.RankingList .ant-layout-sider.ant-layout-sider-dark').css({height:'100%', maxWidth: '179px',minWidth: '179px', width: '179px'});
-    $('.RankingList .ant-menu-item').css({paddingLeft:'10px'})
+  GetRankingList = () => {
+    const data = require('../../../lib/json/RankingList.json')
+    this.setState({
+      dataLish: data
+    })
+
   }
-  // 请求
- GetRankingList=()=>{
-  const data= require('../../../lib/json/RankingList.json')
-  this.setState({
-     dataLish:data
-  })
+  // 选择传参
+  SelectProps = (porps) => {
+    this.setState({
+      propsDataID: porps.key
+    })
+  }
+  componentWillMount() {
+    this.GetRankingList();
+  }
+  componentDidMount() {
+    $('.RankingList .ant-layout-sider.ant-layout-sider-dark').css({ height: '100%', maxWidth: '200px', minWidth: '200px', width: '200px' });
+  }
+
 
 }
-}
 
 
-export default  RankingList;
+export default RankingList;

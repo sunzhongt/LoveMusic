@@ -23,7 +23,7 @@ class Main extends Component {
     this.state = {
       collapsed: false,
       rootSubmenuKeys : ['sub1', 'sub2', 'sub4'],
-      openKeys: ['sub1'],
+      openKeys: ['sub4'],
  
     }
   }
@@ -93,7 +93,7 @@ class Main extends Component {
               <span>最近播放</span>
             </Menu.Item> 
             <SubMenu
-              key="sub1"
+              key="sub10"
               title={<span> <Icon type="arrow-down" /><span>本地下载音乐</span></span>}
             >
               <Menu.Item key="3">生日快乐</Menu.Item>

@@ -2,127 +2,49 @@
     "MaxlistCount": 3,
     "Maxlist": ["热门榜单", "特色音乐榜", "全球榜"],
     "MinlistCount": 30,
-    "MinlistA": [{
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
+    "MinlistData": [
+        {
+          "name":"热门榜单",
+           "data":[
+               {
+                "ID":1,
+                "titles":"爱音乐排行榜",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon001.png"
+               },{
+                "ID":2,
+                "titles":"爱乐飚音榜",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon002.png"
+               }
+           ]
         },
         {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
+          "name":"特色音乐榜",
+           "data":[
+               {
+                "ID":3,
+                "titles":"爱音乐TOP500",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon003.png"
+               },{
+                "ID":4,
+                "titles":"爱乐飚音榜",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon004.png"
+               }
+           ]
         },
         {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        }
-    ],
-    "MinlistB": [{
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"        }
-    ],
-    "MinlistC": [{
-          "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
-        },
-        {
-            "title": "爱音乐排行榜",
-            "IconUrl": "../../../lib/images/icon/icon001.png"
+          "name":"全球榜",
+           "data":[
+               {
+                "ID":5,
+                "titles":"日本排行榜",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon005.png"
+               },{
+                "ID":6,
+                "titles":"创作101榜",
+                "IconUrl":"http://192.168.1.206:3091/icon/icon006.png"
+               }
+           ]
         }
     ]
-
+               
 }
