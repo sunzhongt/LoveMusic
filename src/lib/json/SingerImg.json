@@ -1,0 +1,37 @@
+{
+    "total":8,
+     "data":[
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer001.png')} alt='' />",
+             "SingerName":"摩登兄弟"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer002.png')} alt='' />",
+             "SingerName":"周杰伦"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer003.png')} alt='' />",
+             "SingerName":"薛之谦"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer004.png')} alt='' />",
+             "SingerName":"TFBOYS"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer005.png')} alt='' />",
+             "SingerName":"张杰"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer006.png')} alt='' />",
+             "SingerName":"王力宏"
+         },
+         {
+             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer007.png')} alt='' />",
+             "SingerName":"林俊杰"
+         },
+         {
+             "imgUrl":"../../../../lib/images/Singer/singer008.png",
+             "SingerName":"臭不要脸"
+         }
+     ]
+}

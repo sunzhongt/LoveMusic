@@ -2,7 +2,7 @@
 import $ from 'jquery';
     // 变量
    const variable={
-       tab1:$(window).height()-240
+       tab1:$(window).height()-220
     };
     // 方法
    const func    ={

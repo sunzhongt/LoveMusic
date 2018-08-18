@@ -71,6 +71,7 @@ class RankingList extends Component {
     })
 
   }
+
   // 选择传参
   SelectProps = (porps) => {
     this.setState({

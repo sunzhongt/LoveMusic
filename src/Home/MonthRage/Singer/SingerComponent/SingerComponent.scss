@@ -1,0 +1,26 @@
+.sosText{
+    color: rgb(23, 111, 233);
+    font-size:16px ;
+}
+.itme{
+    // margin-right: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    flex: 1;
+}
+
+.itme:hover{
+    color:rgb(33, 189, 241);
+    
+}
+.itembox{
+    width: 100%;
+  display: flex;
+}
+.btn{
+    font-size: 9px
+ }
+
+ .SingerList{
+     padding:6px 30px ;
+ }

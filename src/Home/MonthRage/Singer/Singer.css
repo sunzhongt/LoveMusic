@@ -1,0 +1,13 @@
+.Singer .ant-menu-item-group-title{
+   background-color: rgba(137, 146, 243, 0.585);
+   padding: 4px;
+   color:#fff;
+   width: 96%;
+   box-sizing: border-box;
+   margin: 0 auto;
+   border-radius: 3px;
+
+}
+.Singer{
+    height: 100%;
+}

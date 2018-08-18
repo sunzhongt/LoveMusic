@@ -15,7 +15,7 @@ import FooterComponent from '../Footer/Footer';//脚步播放器
 
 
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer, Sider} = Layout;
 const SubMenu = Menu.SubMenu;
 class Main extends Component {
   constructor() {
@@ -24,16 +24,17 @@ class Main extends Component {
       collapsed: false,
       rootSubmenuKeys : ['sub1', 'sub2', 'sub4'],
       openKeys: ['sub4'],
+      visible:false,
  
     }
   }
   render() {
     return (
       <Layout>
+  
     <Header className="header"  style={{backgroundColor:'#A88BB9',height:'35px' ,position:'relative'}}>
   
          <img src={headlogo} alt="" style={{  height:'70%'}} className={MainSc.headlogo} />
-    
       <Menu
         theme="dark"
         mode="horizontal"
@@ -50,7 +51,7 @@ class Main extends Component {
              收藏
         </Menu.Item>
         <Menu.Item key="2"><Icon type="share-alt" />分享</Menu.Item>
-        <Menu.Item key="1"><Icon type="user" />孙重涛</Menu.Item>
+        <Menu.Item key="userInfo"><Icon type="user" />孙重涛</Menu.Item>
       </Menu>
     </Header>
     <Layout>
@@ -111,7 +112,8 @@ class Main extends Component {
         </Sider>
       <Layout style={{ padding: '0 4px 0px' }}>
       
-        <Content style={{ background: '#fff', padding: 24, margin: 0, height: "100%" }}>
+        <Content style={{ background: '#fff', padding: 7, margin: 0, height: "100%" }}>
+    
             <Route exact path="/Main" render={()=><Redirect  to="/Main/MonthRage" />}></Route>
             <Route path="/Main/MonthRage"  component={MonthRage}></Route>
             <Route path="/Main/Search" component={Search}></Route>
@@ -153,15 +155,23 @@ class Main extends Component {
     
     }
    }
+   componentDidMount(){
+ 
+   }
    //右侧菜单
    ItmeSelecct(obj){
       this.props.history.push(obj.key);
    }  
    //顶部操作按钮
    HeadSelecct(obj){
-     if(obj.key=="logout")
-      this.props.history.push('/Login');
-   } 
+     if(obj.key=="logout"){
+       this.props.history.push('/Login');
+     }else if(obj.key=="userInfo"){
+     }
+      
+   }
+
+ 
   //  防止多开
    onOpenChange = (openKeys) => {
     const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
