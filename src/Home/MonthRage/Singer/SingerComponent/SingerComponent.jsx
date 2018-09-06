@@ -31,7 +31,7 @@ class SingerComponent extends Component {
           </Col>
         </Row>
         <Row style={{ marginTop: '10px' }}>
-          <Col span={7}>
+          <Col span={9}>
             <Row>
               <Col span={4}>
                 <span>
@@ -98,8 +98,8 @@ class SingerComponent extends Component {
        return    <Col span={6} className={SingerComponentSc.SingerList}  key={i}>
                     <Row>
                       <Col span={24} >
-                        {/* <img style={{ width: '100%' }} src={require('')} alt="" /> */}
-                        { console.log( itme.imgUrl) }
+                        <img style={{ width: '100%' }} src={itme.imgUrl} alt="" />
+                        
                         {/* {} */}
                       </Col>
                       <Col span={24}>

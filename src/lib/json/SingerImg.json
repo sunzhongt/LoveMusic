@@ -2,35 +2,35 @@
     "total":8,
      "data":[
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer001.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1083599257,3933212247&fm=26&gp=0.jpg",
              "SingerName":"摩登兄弟"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer002.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"周杰伦"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer003.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"薛之谦"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer004.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"TFBOYS"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer005.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"张杰"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer006.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"王力宏"
          },
          {
-             "imgUrl":"<img style={{ width: '100%' }} src={require('../../../../lib/images/Singer/singer007.png')} alt='' />",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"林俊杰"
          },
          {
-             "imgUrl":"../../../../lib/images/Singer/singer008.png",
+             "imgUrl":"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3549451235,1307751507&fm=26&gp=0.jpg",
              "SingerName":"臭不要脸"
          }
      ]
